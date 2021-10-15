@@ -6,3 +6,5 @@
 
 ## node
 * node server.js
+* https://blog.katsubemakito.net/nodejs/http-server-built-with-express
+    * [Node.js] expressで作るHTTPサーバ
