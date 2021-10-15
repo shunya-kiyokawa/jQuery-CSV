@@ -8,10 +8,21 @@
 
     <body>
         <h1>CSVを処理する</h1>
-        <p>READ</p>
+        <p>Read</p>
         <script type="text/javascript" src="https://code.jquery.com/jquery-1.6.min.js"></script>
         <script type="text/javascript" src="jquery.csv.js"></script>
         <script type="text/javascript" src="readcsv.js"></script>
+        <script src="write.js"></script>
+
         <table class="table" id="itemlist"></table>
+
+        <p>Write</p>
+        <label for="myname" class="form-label">名前</label>
+        <input type="text" id="myname" class="form-control" >
+        <label for="myage" class="form-label">年齢</label>
+        <input type="text" id="myage" class="form-control" >
+        <label for="mytel" class="form-label">電話番号</label>
+        <input type="text" id="mytel" class="form-control" >
+        <input type="button" class="csv" value="CSV出力" onclick="export_csv()">
     </body>
 </html>
