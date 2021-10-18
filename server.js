@@ -11,6 +11,7 @@ const bootstrapCss = fs.readFileSync('./css/bootstrap.css', 'UTF-8');
 const jqueryCsvJs = fs.readFileSync('./jquery.csv.js', 'UTF-8');
 const readcsvJs = fs.readFileSync('./readcsv.js', 'UTF-8');
 const wirteJs = fs.readFileSync('./write.js', 'UTF-8');
+const csvFile = fs.readFileSync('./itemlist.csv', 'UTF-8');
 
 const url = require('url');
 
@@ -49,6 +50,12 @@ function routeSetting(req, res) {
             res.write(wirteJs);
             res.end();
             break;
+
+        case '/itemlist.csv':
+            res.write(csvFile);
+            res.end();
+            break;
+
     }
 }
  
